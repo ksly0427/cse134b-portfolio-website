@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kenny Ly Website</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+        <style>
+            h3 {color:crimson}
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Kenny Ly Website</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Resume">Personal Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Experiment Section">Experiment Section</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <h2>Homepage</h2>
+            <h3>Welcome to my website!</h3>
+            <p>In this website, I will be displaying my personal work</p>
+            <p>This website will also be a place where future employers (or anyone) could get a better understanding of what I am technically capable of.</p>
+            <hr>
+            <section id="About">
+                <h2>About</h2>
+                <h3>Learn about me!</h3>
+                <p>I am currently a 4th year Computer Engineering Major at UC San Diego.</p>
+            </section>
+            <section id="Resume">
+                <h2>Resume</h2>
+                <h3>This is my Resume</h3>
+                <table>
+                    <colgroup>
+                        <col span="3" style="background-color:gray">
+                    </colgroup>
+                    <caption>Resume Overview</caption>
+                    <tr>
+                        <th>Education</th>
+                        <th>Current Classes</th>
+                        <th>Work Experience</th>
+                    </tr>
+                    <tr>
+                        <td>Computer Engineering @ UCSD</td>
+                        <td>CSE 134B, CSE 127, CSE 151A</td>
+                        <td>Software Engineering intern @ AV</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="Contact">
+                <h2>Contact</h2>
+                <h3>Ask me a question or send me a message!</h3>
+                <form method="get">
+                    <fieldset>
+                        <legend>Form</legend>
+                        <label>Name:
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <br>
+                        <label>Email:
+                            <input type="text" name="email" id="email">
+                        </label>
+                        <br>
+                        <label>Input:
+                            <textarea name="question" id="question"></textarea>
+                        </label>
+                        <br>
+                        <label>Question/Message:
+                            <select name="input" id="input">
+                                <optgroup label="Question/Message">
+                                    <option value="question">Question</option>
+                                    <option value="message">Message</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                        <br>
+                        <button type="submit">Send</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="Experiment Section">
+                <h2>Experiment Section</h2>
+                <h3>This is where I will experiment</h3>
+                <div id="test1">
+                <p><b>Testing <code>details</code>, <code>summary</code>, and <code>ol</code> tags</b></p>
+                    <details>
+                        <summary>One-Pot Garlic Parmesan Pasta Recipe</summary>
+                        <ol>
+                            <li>Heat butter in a pan over Me-Hi heat. Add garlic and cook, stirring frequently for about 1-2 minutes.</li>
+                            <li>Add in the chicken broth, milk, and fettuccine. Season with salt and pepper.</li>
+                            <li>Bring the pot to a boil, then reduce heat and simmer, stirring occasionally, until pasta is cooked through for about 18-20 minutes.</li>
+                            <li>Stir in Parmesan. If the mixture is too thick, add more milk as needed until desired consistency is reached.</li>
+                            <li>Serve immediately, and top with parsley.</li>
+                            <li>Enjoy!</li>
+                        </ol>
+                    </details>
+                </div>
+                <br>
+                <div id="test2">
+                    <p><b>Testing <code>canvas</code>, <code>script</code>, and <code>svg</code> tags</b></p>
+                    <canvas id="testCanvas" width="400" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var x = document.getElementById("testCanvas");
+                        var context = x.getContext("2d");
+                        context.font = "30px Arial";
+                        context.fillText("Just Testing JS in canvas tag", 10, 50);
+                    </script>
+                    <svg width="400" height="180">
+                        <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="blue"/>
+                    </svg>
+                </div>
+                <div id="test3">
+                    <p><b>Testing <code>picture</code>, <code>img</code>, <code>source</code>, <code>video</code>, and <code>iframe</code> tags</b></p>
+                    <picture>
+                        <img src="/images/geisel.jpg" width="480" height="321">
+                    </picture>
+
+                    <video width="480" height="321" controls>
+                        <source src="/videos/hummingbird.mp4" type="video/mp4">
+                        Your browser does not support video
+                    </video>
+
+                    <audio controls>
+                        <source src="/audio/birdchirping.mp3" type="audio/mpeg">
+                        Your browser does not support audio
+                    </audio>
+
+                    <iframe src="https://ucsd.edu/" title="UCSD Website"></iframe>
+                </div>
+                <div id="test4">
+                    <p><b>Testing <code>aside</code>, <code>span</code>, <code>i</code>, <code>strong</code>, <code>em</code>, <code>pre</code> tags</b></p>
+                    
+                    <p><strong>Albert Einstein</strong> was born at <em>Ulm</em>, in Württemberg, Germany, on March 14, 1879. Six weeks later the family moved to Munich, where he later on began his schooling at the <i>Luitpold Gymnasium</i>.</p>
+                    <p>Some famous Albert Einstein quotes are:</p>
+                    <aside>
+                        <pre>
+                            “Life is like riding a bicycle. To keep your balance, you must keep moving.”
+
+                            “The important thing is to not stop questioning. Curiosity has its own reason for existing.”
+
+                            “I believe in one thing—that only a life lived for others is a life worth living.”
+
+                            “Where the world ceases to be the scene of our personal hopes and wishes, where we face it as free beings admiring, asking, observing, there we enter the realm of art and science.”
+                        </pre>
+                    </aside>
+                    <p>Albert Einstein's favorite color is <span style="color:yellow;font-weight:bold">yellow</span></p>
+                    <figure>
+                        <img src="/images/einsteinfig.jpg">
+                        <figcaption>Sample of data from Einstein's work with Meyer-Peter's flume at Swiss Federal Institute</figcaption>
+                    </figure>
+                </div>
+                <div id="test5">
+                    <p><b>Testing <code>datalist</code> tag</b></p>
+                    <form method="get">
+                        <label for="browser">Choose your favorite Animals:</label>
+                        <input list="animals" name="animal" id="animal">
+                        <datalist id="animals">
+                            <option value="Dogs">
+                            <option value="Cats">
+                            <option value="Lizards">
+                            <option value="Fish">
+                            <option value="Birds">
+                        </datalist>
+                        <input type="submit">
+                    </form>
+                </div>
+                <div id="test6">
+                    <p><b>Testing <code>template</code> tag</b></p>
+                    <template>
+                        <p>This p tag is in a template tag, but it should be hidden because it was not rendered</p>
+                    </template>
+                    <p>A template element was added above this p tag, but was correctly not rendered</p>
+                </div>
+            </section> 
+        </main>
+        <footer>
+            
+            <hr>
+        </footer>
+    </body>
+</html>
