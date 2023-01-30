@@ -19,7 +19,7 @@
                     <li><a href="#About">About</a></li>
                     <li><a href="#Resume">Personal Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
-                    <li><a href="#Experiment Section">Experiment Section</a></li>
+                    <li><a href="#Experiment-Section">Experiment Section</a></li>
                 </ul>
             </nav>
             <hr>
@@ -39,10 +39,10 @@
                 <h2>Resume</h2>
                 <h3>This is my Resume</h3>
                 <table>
+                    <caption>Resume Overview</caption>
                     <colgroup>
                         <col span="3" style="background-color:gray">
                     </colgroup>
-                    <caption>Resume Overview</caption>
                     <tr>
                         <th>Education</th>
                         <th>Current Classes</th>
@@ -86,7 +86,7 @@
                     </fieldset>
                 </form>
             </section>
-            <section id="Experiment Section">
+            <section id="Experiment-Section">
                 <h2>Experiment Section</h2>
                 <h3>This is where I will experiment</h3>
                 <div id="test1">
@@ -160,15 +160,16 @@
                 <div id="test5">
                     <p><b>Testing <code>datalist</code> tag</b></p>
                     <form method="get">
-                        <label for="browser">Choose your favorite Animals:</label>
-                        <input list="animals" name="animal" id="animal">
-                        <datalist id="animals">
-                            <option value="Dogs">
-                            <option value="Cats">
-                            <option value="Lizards">
-                            <option value="Fish">
-                            <option value="Birds">
-                        </datalist>
+                        <label>Choose your favorite Animals:
+                            <input list="animals" name="animal" id="animal">
+                            <datalist id="animals">
+                                <option value="Dogs">
+                                <option value="Cats">
+                                <option value="Lizards">
+                                <option value="Fish">
+                                <option value="Birds">
+                            </datalist>
+                        </label>
                         <input type="submit">
                     </form>
                 </div>
